@@ -2,8 +2,9 @@
 #include <X11/Xlib.h>
 #include <iostream>
 #include <cstring>
-
-unsigned long RGBtoPixel(Display* display, int screen, Color color) {
+#include <windows.h>
+#include <gl/gl.h> 
+unigned long RGBtoPixel(Display* display, int screen, Color color) {
     XColor xcolor;
     xcolor.red = color.r;
     xcolor.green = color.g;
